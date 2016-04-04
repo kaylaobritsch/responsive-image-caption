@@ -21,6 +21,10 @@ body {
   margin: 0;
 }
 
+.link-card {
+  padding: 0;
+}
+
 .img-flex {
   display: block;
   margin: 0;
@@ -28,18 +32,19 @@ body {
 }
 
 figure {
+  background-color: #e2e2e2;
   margin: 0;
+  padding-bottom: 1rem;
+}
+
+figcaption {
+  padding: 1rem;
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
   font-weight: normal;
   font-size: 1.5rem;
-}
-
-figcaption {
-  background-color: #e2e2e2;
-  padding: 1rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -49,12 +54,12 @@ figcaption {
     line-height: 1.4;
   }
 
-  img {
+  .link-card {
     position: relative;
+    overflow: hidden;
   }
 
   figcaption {
-    overflow: hidden;
     color: #fff;
     background-color: rgba(0, 0, 0, .3);
     border-radius: .5rem;
@@ -62,7 +67,25 @@ figcaption {
     position: absolute;
     right: 2rem;
     width: 20em;
+    padding: 0 1rem 0 1rem;
   }
 
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
 }
